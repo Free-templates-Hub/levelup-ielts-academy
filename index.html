@@ -1,0 +1,851 @@
+﻿<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LevelUp IELTS | Shaxsiy Yo'lingizni Boshlang</title>
+    <meta name="description" content="IELTS 7+ ga premium yondashuv. Darajangizni aniqlang, individual reja oling, natijangizni kuzating.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+
+    <!-- ═══════════ NAVIGATION ═══════════ -->
+    <header id="mainNav">
+        <div class="container">
+            <div class="nav-wrapper">
+                <a href="#" class="logo">
+                    <span class="logo-icon"><i class="fa-solid fa-bolt"></i></span>
+                    LevelUp <span>IELTS</span>
+                </a>
+                <nav class="nav-links">
+                    <a href="#roadmap">Yo'nalish</a>
+                    <a href="#plans">Rejalar</a>
+                    <a href="#simulator">Simulyator</a>
+                    <a href="#success">Natijalar</a>
+                    <a href="#mentors">Mentorlar</a>
+                </nav>
+                <a href="#test" class="btn-nav">Bepul diagnostika</a>
+                <div class="mobile-toggle" onclick="toggleMobile()">
+                    <span></span><span></span><span></span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- ═══════════ MOBILE MENU ═══════════ -->
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="#roadmap" onclick="closeMobile()">Yo'nalish</a>
+        <a href="#plans" onclick="closeMobile()">Rejalar</a>
+        <a href="#simulator" onclick="closeMobile()">Simulyator</a>
+        <a href="#success" onclick="closeMobile()">Natijalar</a>
+        <a href="#mentors" onclick="closeMobile()">Mentorlar</a>
+        <a href="#test" class="btn-nav-mobile" onclick="closeMobile()">Bepul diagnostika</a>
+    </div>
+
+    <!-- ═══════════ HERO SECTION ═══════════ -->
+    <section class="hero-section">
+        <div class="hero-orb hero-orb-1"></div>
+        <div class="hero-orb hero-orb-2"></div>
+        <div class="hero-orb hero-orb-3"></div>
+
+        <div class="container">
+            <div class="hero-grid">
+                <div class="hero-left">
+                    <div class="hero-badge">
+                        <i class="fa-solid fa-sparkles"></i> O'zbekistondagi #1 IELTS platformasi
+                    </div>
+                    <h1 class="hero-title">
+                        IELTS 7+ sari shaxsiy yo'lingizni
+                        <span class="text-gradient">boshlang</span>
+                    </h1>
+                    <p class="hero-subtitle">
+                        Darajangizni aniqlang, individual reja oling va natijangizni real vaqtda kuzatib boring. Bu shunchaki kurs emas — bu sizning muvaffaqiyat tizimingiz.
+                    </p>
+                    <div class="hero-actions">
+                        <a href="#test" class="btn-hero btn-hero-primary">
+                            <i class="fa-solid fa-bullseye"></i>
+                            Bepul diagnostika boshlash
+                        </a>
+                        <a href="#success" class="btn-hero btn-hero-secondary">
+                            <i class="fa-solid fa-chart-line"></i>
+                            Natijalarni ko'rish
+                        </a>
+                    </div>
+                    <div class="hero-trust">
+                        <div class="trust-item">
+                            <div class="trust-avatars">
+                                <img src="https://i.pravatar.cc/40?img=1" alt="">
+                                <img src="https://i.pravatar.cc/40?img=2" alt="">
+                                <img src="https://i.pravatar.cc/40?img=3" alt="">
+                                <img src="https://i.pravatar.cc/40?img=4" alt="">
+                                <img src="https://i.pravatar.cc/40?img=5" alt="">
+                            </div>
+                            <span><strong>2,400+</strong> o'quvchi</span>
+                        </div>
+                        <div class="trust-item">
+                            <i class="fa-solid fa-star" style="color: #FBBF24;"></i>
+                            <span><strong>4.9/5</strong> reyting</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero-right">
+                    <div class="dashboard-3d">
+                        <div class="dash-header">
+                            <div class="dash-user-info">
+                                <div class="dash-avatar">
+                                    <img src="https://i.pravatar.cc/60?img=12" alt="Student">
+                                    <div class="dash-online"></div>
+                                </div>
+                                <div>
+                                    <div class="dash-name">Aziza Karimova</div>
+                                    <div class="dash-plan">IELTS Intensive Pro</div>
+                                </div>
+                            </div>
+                            <div class="dash-target">
+                                <span class="dash-target-label">Maqsad</span>
+                                <span class="dash-target-value">Band 7.5</span>
+                            </div>
+                        </div>
+
+                        <div class="dash-score-ring">
+                            <svg viewBox="0 0 120 120">
+                                <circle cx="60" cy="60" r="50" class="ring-bg" />
+                                <circle cx="60" cy="60" r="50" class="ring-progress" />
+                            </svg>
+                            <div class="ring-text">
+                                <span class="ring-current">5.5</span>
+                                <span class="ring-arrow"><i class="fa-solid fa-arrow-right"></i></span>
+                                <span class="ring-goal">7.5</span>
+                            </div>
+                        </div>
+
+                        <div class="dash-skills">
+                            <div class="skill-row">
+                                <div class="skill-label"><i class="fa-solid fa-headphones"></i> Listening</div>
+                                <div class="skill-bar-wrap">
+                                    <div class="skill-bar" data-width="80"></div>
+                                    <span class="skill-score">8.0</span>
+                                </div>
+                            </div>
+                            <div class="skill-row">
+                                <div class="skill-label"><i class="fa-solid fa-book-open"></i> Reading</div>
+                                <div class="skill-bar-wrap">
+                                    <div class="skill-bar" data-width="75"></div>
+                                    <span class="skill-score">7.5</span>
+                                </div>
+                            </div>
+                            <div class="skill-row">
+                                <div class="skill-label"><i class="fa-solid fa-pen"></i> Writing</div>
+                                <div class="skill-bar-wrap">
+                                    <div class="skill-bar" data-width="70"></div>
+                                    <span class="skill-score">7.0</span>
+                                </div>
+                            </div>
+                            <div class="skill-row">
+                                <div class="skill-label"><i class="fa-solid fa-microphone"></i> Speaking</div>
+                                <div class="skill-bar-wrap">
+                                    <div class="skill-bar" data-width="75"></div>
+                                    <span class="skill-score">7.5</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="float-widget fw-1">
+                            <i class="fa-solid fa-circle-check"></i>
+                            <span>Bugungi vazifa bajarildi</span>
+                        </div>
+                        <div class="float-widget fw-2">
+                            <i class="fa-solid fa-arrow-trend-up"></i>
+                            <span>+1.0 Mock test</span>
+                        </div>
+                        <div class="float-widget fw-3">
+                            <i class="fa-solid fa-book"></i>
+                            <span>2,450 so'z o'rganildi</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════ IELTS ROADMAP ═══════════ -->
+    <section id="roadmap" class="roadmap-section">
+        <div class="container">
+            <div class="section-header center">
+                <span class="section-tag"><i class="fa-solid fa-map"></i> Sizning yo'lingiz</span>
+                <h2>0 dan IELTS natijagacha</h2>
+                <p>Har bir qadam aniq va nazorat qilinadi</p>
+            </div>
+
+            <div class="roadmap-journey">
+                <div class="journey-line"></div>
+
+                <div class="journey-step" data-step="1">
+                    <div class="step-node">
+                        <div class="node-number">01</div>
+                        <div class="node-dot"></div>
+                    </div>
+                    <div class="step-content-card">
+                        <div class="step-icon"><i class="fa-solid fa-magnifying-glass-chart"></i></div>
+                        <h3>Level Test</h3>
+                        <p>Bepul joylashuv testi orqali hozirgi darajangizni aniqlaymiz. Listening, Reading, Writing va Speaking bo'yicha to'liq tahlil.</p>
+                        <div class="step-tag">Bepul · 45 daqiqa</div>
+                    </div>
+                </div>
+
+                <div class="journey-step" data-step="2">
+                    <div class="step-node">
+                        <div class="node-number">02</div>
+                        <div class="node-dot"></div>
+                    </div>
+                    <div class="step-content-card">
+                        <div class="step-icon"><i class="fa-solid fa-seedling"></i></div>
+                        <h3>Foundation</h3>
+                        <p>Ingliz tilining asoslarini mustahkamlash. Grammatika, vocabulyar va phonetics bo'yicha individual mashg'ulotlar.</p>
+                        <div class="step-tag">4-6 hafta</div>
+                    </div>
+                </div>
+
+                <div class="journey-step" data-step="3">
+                    <div class="step-node">
+                        <div class="node-number">03</div>
+                        <div class="node-dot"></div>
+                    </div>
+                    <div class="step-content-card">
+                        <div class="step-icon"><i class="fa-solid fa-chess-knight"></i></div>
+                        <h3>IELTS Strategy</h3>
+                        <p>Har bir section uchun maxsus strategiyalar. Task response, lexical resource va grammar bo'yicha professional tayyorgarlik.</p>
+                        <div class="step-tag">6-8 hafta</div>
+                    </div>
+                </div>
+
+                <div class="journey-step" data-step="4">
+                    <div class="step-node">
+                        <div class="node-number">04</div>
+                        <div class="node-dot"></div>
+                    </div>
+                    <div class="step-content-card">
+                        <div class="step-icon"><i class="fa-solid fa-clipboard-check"></i></div>
+                        <h3>Mock Exams</h3>
+                        <p>Haqiqiy imtihon sharoitida to'liq mock testlar. Har bir testdan keyin batafsil tahlil va feedback.</p>
+                        <div class="step-tag">Haftada 2 marta</div>
+                    </div>
+                </div>
+
+                <div class="journey-step" data-step="5">
+                    <div class="step-node">
+                        <div class="node-number">05</div>
+                        <div class="node-dot"></div>
+                    </div>
+                    <div class="step-content-card">
+                        <div class="step-icon"><i class="fa-solid fa-certificate"></i></div>
+                        <h3>Real Exam</h3>
+                        <p>Haqiqiy IELTS imtihoniga ishonchli tayyorlaning. Biz bilan natijangizga erishing!</p>
+                        <div class="step-tag">🎯 Maqsad: Band 7.0+</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════ SCORE SIMULATOR ═══════════ -->
+    <section id="simulator" class="simulator-section">
+        <div class="container">
+            <div class="simulator-container">
+                <div class="simulator-left">
+                    <span class="section-tag"><i class="fa-solid fa-calculator"></i> Interaktiv</span>
+                    <h2>Natijangizni taxmin qiling</h2>
+                    <p>3 ta savolga javob bering va biz sizga aniq reja va mumkin bo'lgan IELTS natijangizni ko'rsatamiz.</p>
+                    <div class="sim-features">
+                        <div class="sim-feature"><i class="fa-solid fa-check"></i><span>Shaxsiy progress forecast</span></div>
+                        <div class="sim-feature"><i class="fa-solid fa-check"></i><span>Optimal o'quv rejasi</span></div>
+                        <div class="sim-feature"><i class="fa-solid fa-check"></i><span>Mentor tavsiyalari</span></div>
+                    </div>
+                </div>
+                <div class="simulator-right">
+                    <div class="sim-calculator">
+                        <div class="sim-step active" id="simStep1">
+                            <label>Hozirgi darajangiz</label>
+                            <div class="sim-options">
+                                <button class="sim-opt" data-value="beginner" onclick="selectSimOpt(this, 1)">
+                                    <i class="fa-solid fa-seedling"></i>
+                                    <span>Beginner</span>
+                                    <small>Hozir 4.0-5.0</small>
+                                </button>
+                                <button class="sim-opt" data-value="intermediate" onclick="selectSimOpt(this, 1)">
+                                    <i class="fa-solid fa-layer-group"></i>
+                                    <span>Intermediate</span>
+                                    <small>Hozir 5.5-6.0</small>
+                                </button>
+                                <button class="sim-opt" data-value="advanced" onclick="selectSimOpt(this, 1)">
+                                    <i class="fa-solid fa-rocket"></i>
+                                    <span>Advanced</span>
+                                    <small>Hozir 6.5+</small>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="sim-step" id="simStep2">
+                            <label>Har kuni qancha vaqt ajratasiz?</label>
+                            <div class="sim-options">
+                                <button class="sim-opt" data-value="1-2" onclick="selectSimOpt(this, 2)">
+                                    <i class="fa-solid fa-clock"></i>
+                                    <span>1-2 soat</span>
+                                    <small>Sevimli rejim</small>
+                                </button>
+                                <button class="sim-opt" data-value="3-4" onclick="selectSimOpt(this, 2)">
+                                    <i class="fa-solid fa-hourglass-half"></i>
+                                    <span>3-4 soat</span>
+                                    <small>O'rtacha rejim</small>
+                                </button>
+                                <button class="sim-opt" data-value="5+" onclick="selectSimOpt(this, 2)">
+                                    <i class="fa-solid fa-fire"></i>
+                                    <span>5+ soat</span>
+                                    <small>Intensiv rejim</small>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="sim-step" id="simStep3">
+                            <label>Natijangizga qachon erishmoqchisiz?</label>
+                            <div class="sim-options">
+                                <button class="sim-opt" data-value="3" onclick="selectSimOpt(this, 3)">
+                                    <i class="fa-solid fa-bolt"></i>
+                                    <span>3 oy</span>
+                                    <small>Tezkor natija</small>
+                                </button>
+                                <button class="sim-opt" data-value="6" onclick="selectSimOpt(this, 3)">
+                                    <i class="fa-solid fa-calendar"></i>
+                                    <span>6 oy</span>
+                                    <small>Tinch tayyorgarlik</small>
+                                </button>
+                                <button class="sim-opt" data-value="12" onclick="selectSimOpt(this, 3)">
+                                    <i class="fa-solid fa-clock"></i>
+                                    <span>12 oy</span>
+                                    <small>To'liq asos</small>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="sim-step" id="simResult">
+                            <div class="result-card">
+                                <div class="result-icon"><i class="fa-solid fa-trophy"></i></div>
+                                <h3>Sizning natijangiz</h3>
+                                <div class="result-prediction">
+                                    <span class="pred-label">Mumkin bo'lgan natija:</span>
+                                    <span class="pred-value" id="predValue">IELTS 7.0</span>
+                                    <span class="pred-time" id="predTime">6 oy ichida</span>
+                                </div>
+                                <div class="result-breakdown">
+                                    <div class="rb-item"><span>Listening</span><span class="rb-score">7.5</span></div>
+                                    <div class="rb-item"><span>Reading</span><span class="rb-score">7.0</span></div>
+                                    <div class="rb-item"><span>Writing</span><span class="rb-score">6.5</span></div>
+                                    <div class="rb-item"><span>Speaking</span><span class="rb-score">7.0</span></div>
+                                </div>
+                                <a href="#test" class="btn-result">Aniq reja olish &rarr;</a>
+                            </div>
+                        </div>
+                        <div class="sim-progress">
+                            <div class="sim-progress-bar"><div class="sim-progress-fill" id="simProgressFill" style="width: 25%"></div></div>
+                            <div class="sim-progress-text"><span id="simProgressText">1 / 4</span></div>
+                        </div>
+                        <div class="sim-actions">
+                            <button class="btn-sim btn-sim-back" id="simBackBtn" onclick="simBack()" disabled>
+                                <i class="fa-solid fa-arrow-left"></i> Orqaga
+                            </button>
+                            <button class="btn-sim btn-sim-next" id="simNextBtn" onclick="simNext()">
+                                Davom etish <i class="fa-solid fa-arrow-right"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════ LEARNING PLANS ═══════════ -->
+    <section id="plans" class="plans-section">
+        <div class="container">
+            <div class="section-header center">
+                <span class="section-tag"><i class="fa-solid fa-compass"></i> O'quv rejalar</span>
+                <h2>O'zingizga mos rejani tanlang</h2>
+                <p>Har bir reja aniq natijaga yo'naltirilgan</p>
+            </div>
+
+            <div class="plans-grid">
+                <!-- START -->
+                <div class="plan-card plan-start">
+                    <div class="plan-badge">START</div>
+                    <div class="plan-header">
+                        <div class="plan-icon plan-icon-start"><i class="fa-solid fa-seedling"></i></div>
+                        <h3>Foundation</h3>
+                        <p class="plan-desc">Boshlovchilar uchun mustahkam asos</p>
+                    </div>
+                    <div class="plan-current">
+                        <span class="plan-level-label">Hozirgi:</span>
+                        <span class="plan-level-value">Beginner (A2-B1)</span>
+                    </div>
+                    <div class="plan-goal"><i class="fa-solid fa-bullseye"></i><span>Maqsad: IELTS 5.5-6.0</span></div>
+                    <div class="plan-progress">
+                        <div class="plan-progress-bar"><div class="plan-progress-fill" style="width: 0%"></div></div>
+                        <span class="plan-progress-label">Dastlabki holat</span>
+                    </div>
+                    <ul class="plan-features">
+                        <li><i class="fa-solid fa-check"></i> Kuniga 2 soat mashg'ulot</li>
+                        <li><i class="fa-solid fa-check"></i> 1,000+ asosiy so'z</li>
+                        <li><i class="fa-solid fa-check"></i> Asosiy grammatika</li>
+                        <li><i class="fa-solid fa-check"></i> Haftalik progress hisobot</li>
+                        <li><i class="fa-solid fa-check"></i> 2 ta mock test</li>
+                    </ul>
+                    <div class="plan-weekly">
+                        <strong>Haftalik maqsad:</strong>
+                        <span>15 soat mashg'ulot · 100 yangi so'z</span>
+                    </div>
+                    <a href="#test" class="btn-plan">Boshlash</a>
+                </div>
+
+                <!-- GROW -->
+                <div class="plan-card plan-grow">
+                    <div class="plan-popular">&#11088; MASHXUR</div>
+                    <div class="plan-badge plan-badge-grow">GROW</div>
+                    <div class="plan-header">
+                        <div class="plan-icon plan-icon-grow"><i class="fa-solid fa-rocket"></i></div>
+                        <h3>Intensive</h3>
+                        <p class="plan-desc">Tez va ishonchli natija</p>
+                    </div>
+                    <div class="plan-current">
+                        <span class="plan-level-label">Hozirgi:</span>
+                        <span class="plan-level-value">Intermediate (B1-B2)</span>
+                    </div>
+                    <div class="plan-goal"><i class="fa-solid fa-bullseye"></i><span>Maqsad: IELTS 6.5+</span></div>
+                    <div class="plan-progress">
+                        <div class="plan-progress-bar"><div class="plan-progress-fill" style="width: 35%"></div></div>
+                        <span class="plan-progress-label">O'rtacha progress</span>
+                    </div>
+                    <ul class="plan-features">
+                        <li><i class="fa-solid fa-check"></i> Kuniga 4 soat mashg'ulot</li>
+                        <li><i class="fa-solid fa-check"></i> 2,500+ IELTS so'z</li>
+                        <li><i class="fa-solid fa-check"></i> Barcha 4 skill bo'yicha</li>
+                        <li><i class="fa-solid fa-check"></i> AI Writing check</li>
+                        <li><i class="fa-solid fa-check"></i> Speaking club</li>
+                        <li><i class="fa-solid fa-check"></i> 8 ta mock test</li>
+                        <li><i class="fa-solid fa-check"></i> Haftalik feedback</li>
+                    </ul>
+                    <div class="plan-weekly">
+                        <strong>Haftalik maqsad:</strong>
+                        <span>25 soat mashg'ulot · 200 yangi so'z · 2 mock test</span>
+                    </div>
+                    <a href="#test" class="btn-plan btn-plan-primary">Boshlash</a>
+                </div>
+
+                <!-- PRO -->
+                <div class="plan-card plan-pro">
+                    <div class="plan-badge plan-badge-pro">PRO</div>
+                    <div class="plan-header">
+                        <div class="plan-icon plan-icon-pro"><i class="fa-solid fa-crown"></i></div>
+                        <h3>Premium</h3>
+                        <p class="plan-desc">Shaxsiy mentor va 7.5+ kafolat</p>
+                    </div>
+                    <div class="plan-current">
+                        <span class="plan-level-label">Hozirgi:</span>
+                        <span class="plan-level-value">Advanced (B2-C1)</span>
+                    </div>
+                    <div class="plan-goal"><i class="fa-solid fa-bullseye"></i><span>Maqsad: IELTS 7.5+</span></div>
+                    <div class="plan-progress">
+                        <div class="plan-progress-bar"><div class="plan-progress-fill" style="width: 60%"></div></div>
+                        <span class="plan-progress-label">Yuqori daraja</span>
+                    </div>
+                    <ul class="plan-features">
+                        <li><i class="fa-solid fa-check"></i> Shaxsiy mentor</li>
+                        <li><i class="fa-solid fa-check"></i> Cheklangan guruh (3-5 kishi)</li>
+                        <li><i class="fa-solid fa-check"></i> 24/7 AI yordam</li>
+                        <li><i class="fa-solid fa-check"></i> Unlimited mock test</li>
+                        <li><i class="fa-solid fa-check"></i> Individual feedback</li>
+                        <li><i class="fa-solid fa-check"></i> Exam day support</li>
+                        <li><i class="fa-solid fa-check"></i> Natija kafolati</li>
+                    </ul>
+                    <div class="plan-weekly">
+                        <strong>Haftalik maqsad:</strong>
+                        <span>30+ soat · Full immersion · Har kuni feedback</span>
+                    </div>
+                    <a href="#test" class="btn-plan btn-plan-pro">Tanlash</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════ HALL OF SUCCESS ═══════════ -->
+    <section id="success" class="success-section">
+        <div class="container">
+            <div class="section-header center">
+                <span class="section-tag"><i class="fa-solid fa-trophy"></i> Muvaffaqiyat</span>
+                <h2>Students Hall of Success</h2>
+                <p>Ularning muvaffaqiyati &#8212; sizning ilhomingiz</p>
+            </div>
+
+            <div class="success-grid">
+                <div class="success-card">
+                    <div class="success-card-top">
+                        <div class="success-avatar">
+                            <img src="https://i.pravatar.cc/80?img=11" alt="Akmal">
+                            <div class="success-badge success-badge-high"><i class="fa-solid fa-medal"></i> TOP</div>
+                        </div>
+                        <div class="success-info">
+                            <h4>Akmal Rahimov</h4>
+                            <span>Grant g'olibi &#183; Stanford University</span>
+                        </div>
+                    </div>
+                    <div class="success-progress">
+                        <div class="success-before"><span>Oldin</span><span class="score-old">5.0</span></div>
+                        <div class="success-arrow"><i class="fa-solid fa-arrow-right"></i></div>
+                        <div class="success-after"><span>Keyin</span><span class="score-new">7.5</span></div>
+                    </div>
+                    <div class="success-detail">
+                        <div class="success-skills">
+                            <div class="ss-item"><span>L</span><strong>8.0</strong></div>
+                            <div class="ss-item"><span>R</span><strong>7.5</strong></div>
+                            <div class="ss-item"><span>W</span><strong>7.0</strong></div>
+                            <div class="ss-item"><span>S</span><strong>7.5</strong></div>
+                        </div>
+                        <div class="success-meta"><i class="fa-solid fa-clock"></i> 5 oy</div>
+                    </div>
+                </div>
+
+                <div class="success-card">
+                    <div class="success-card-top">
+                        <div class="success-avatar">
+                            <img src="https://i.pravatar.cc/80?img=32" alt="Madina">
+                            <div class="success-badge success-badge-high"><i class="fa-solid fa-medal"></i> TOP</div>
+                        </div>
+                        <div class="success-info">
+                            <h4>Madina Aliyeva</h4>
+                            <span>Magistratura &#183; Cambridge</span>
+                        </div>
+                    </div>
+                    <div class="success-progress">
+                        <div class="success-before"><span>Oldin</span><span class="score-old">5.5</span></div>
+                        <div class="success-arrow"><i class="fa-solid fa-arrow-right"></i></div>
+                        <div class="success-after"><span>Keyin</span><span class="score-new">8.0</span></div>
+                    </div>
+                    <div class="success-detail">
+                        <div class="success-skills">
+                            <div class="ss-item"><span>L</span><strong>8.5</strong></div>
+                            <div class="ss-item"><span>R</span><strong>8.0</strong></div>
+                            <div class="ss-item"><span>W</span><strong>7.5</strong></div>
+                            <div class="ss-item"><span>S</span><strong>8.0</strong></div>
+                        </div>
+                        <div class="success-meta"><i class="fa-solid fa-clock"></i> 4 oy</div>
+                    </div>
+                </div>
+
+                <div class="success-card">
+                    <div class="success-card-top">
+                        <div class="success-avatar">
+                            <img src="https://i.pravatar.cc/80?img=53" alt="Bekzod">
+                            <div class="success-badge success-badge-mid"><i class="fa-solid fa-star"></i> PRO</div>
+                        </div>
+                        <div class="success-info">
+                            <h4>Bekzod Toshmatov</h4>
+                            <span>MBA dasturi &#183; LSE London</span>
+                        </div>
+                    </div>
+                    <div class="success-progress">
+                        <div class="success-before"><span>Oldin</span><span class="score-old">4.5</span></div>
+                        <div class="success-arrow"><i class="fa-solid fa-arrow-right"></i></div>
+                        <div class="success-after"><span>Keyin</span><span class="score-new">7.0</span></div>
+                    </div>
+                    <div class="success-detail">
+                        <div class="success-skills">
+                            <div class="ss-item"><span>L</span><strong>7.5</strong></div>
+                            <div class="ss-item"><span>R</span><strong>7.0</strong></div>
+                            <div class="ss-item"><span>W</span><strong>6.5</strong></div>
+                            <div class="ss-item"><span>S</span><strong>7.0</strong></div>
+                        </div>
+                        <div class="success-meta"><i class="fa-solid fa-clock"></i> 6 oy</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════ LIVE ANALYTICS ═══════════ -->
+    <section class="analytics-section">
+        <div class="container">
+            <div class="analytics-container">
+                <div class="analytics-left">
+                    <span class="section-tag"><i class="fa-solid fa-chart-line"></i> Real vaqt</span>
+                    <h2>Har kuni rivojlanishingizni kuzating</h2>
+                    <p>Shaxsiy kabinetingizda barcha ko'rsatkichlaringiz bir joyda. Progressingizni real vaqtda kuzating va o'zgartiring.</p>
+                    <div class="analytics-features">
+                        <div class="analytics-feature">
+                            <div class="af-icon af-icon-green"><i class="fa-solid fa-chart-pie"></i></div>
+                            <div><strong>Haftalik grafik</strong><p>Progressingizni vizual ko'ring</p></div>
+                        </div>
+                        <div class="analytics-feature">
+                            <div class="af-icon af-icon-blue"><i class="fa-solid fa-list-check"></i></div>
+                            <div><strong>Vazifalar nazorati</strong><p>Bajarilgan va qolgan topshiriqlar</p></div>
+                        </div>
+                        <div class="analytics-feature">
+                            <div class="af-icon af-icon-purple"><i class="fa-solid fa-comments"></i></div>
+                            <div><strong>Writing feedback</strong><p>Mentor fikrlari real vaqtda</p></div>
+                        </div>
+                        <div class="analytics-feature">
+                            <div class="af-icon af-icon-orange"><i class="fa-solid fa-book"></i></div>
+                            <div><strong>Vocabulary growth</strong><p>O'rganilgan so'zlar dinamikasi</p></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="analytics-right">
+                    <div class="analytics-dashboard">
+                        <div class="ad-header">
+                            <div class="ad-user">
+                                <img src="https://i.pravatar.cc/30?img=12" alt="">
+                                <span>Salom, Jasur! &#128075;</span>
+                            </div>
+                            <div class="ad-date">Bugun</div>
+                        </div>
+                        <div class="ad-stats">
+                            <div class="ad-stat">
+                                <span class="ad-stat-label">Weekly Progress</span>
+                                <span class="ad-stat-value ad-stat-value-green">+12%</span>
+                            </div>
+                            <div class="ad-stat">
+                                <span class="ad-stat-label">Homework</span>
+                                <span class="ad-stat-value ad-stat-value-blue">94%</span>
+                            </div>
+                            <div class="ad-stat">
+                                <span class="ad-stat-label">Vocabulary</span>
+                                <span class="ad-stat-value ad-stat-value-purple">2,450</span>
+                            </div>
+                        </div>
+                        <div class="ad-chart">
+                            <div class="ad-chart-title">Speaking Practice (Oxirgi 8 hafta)</div>
+                            <div class="ad-chart-bars">
+                                <div class="ad-bar" style="height: 45%"><span class="ad-bar-label">5.0</span></div>
+                                <div class="ad-bar" style="height: 52%"><span class="ad-bar-label">5.5</span></div>
+                                <div class="ad-bar" style="height: 58%"><span class="ad-bar-label">5.8</span></div>
+                                <div class="ad-bar" style="height: 62%"><span class="ad-bar-label">6.0</span></div>
+                                <div class="ad-bar" style="height: 68%"><span class="ad-bar-label">6.5</span></div>
+                                <div class="ad-bar" style="height: 72%"><span class="ad-bar-label">6.8</span></div>
+                                <div class="ad-bar" style="height: 78%"><span class="ad-bar-label">7.0</span></div>
+                                <div class="ad-bar ad-bar-active" style="height: 85%"><span class="ad-bar-label">7.5</span></div>
+                            </div>
+                            <div class="ad-chart-labels">
+                                <span>1</span><span>2</span><span>3</span><span>4</span><span>5</span><span>6</span><span>7</span><span>8</span>
+                            </div>
+                        </div>
+                        <div class="ad-tasks">
+                            <div class="ad-task done"><i class="fa-solid fa-circle-check"></i><span>Reading: Passage #12</span></div>
+                            <div class="ad-task done"><i class="fa-solid fa-circle-check"></i><span>Writing: Task 2 Essay</span></div>
+                            <div class="ad-task active"><i class="fa-solid fa-circle"></i><span>Speaking: Part 2 Practice</span></div>
+                            <div class="ad-task"><i class="fa-solid fa-circle"></i><span>Vocabulary: 50 new words</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════ MENTORS ═══════════ -->
+    <section id="mentors" class="mentors-section">
+        <div class="container">
+            <div class="section-header center">
+                <span class="section-tag"><i class="fa-solid fa-chalkboard-user"></i> Mentorlar</span>
+                <h2>Professional mentorlar jamoasi</h2>
+                <p>Har bir mentor &#8212; IELTS sohasida isbotlangan mutaxassis</p>
+            </div>
+
+            <div class="mentors-grid">
+                <div class="mentor-card">
+                    <div class="mentor-avatar-wrap">
+                        <img src="https://i.pravatar.cc/150?img=15" alt="Mentor">
+                        <div class="mentor-status"></div>
+                    </div>
+                    <div class="mentor-info">
+                        <h4>Nodira Azimova</h4>
+                        <span class="mentor-role">Lead IELTS Instructor</span>
+                    </div>
+                    <div class="mentor-stats">
+                        <div class="mentor-stat"><span class="ms-value">IELTS 8.5</span><span class="ms-label">Overall Score</span></div>
+                        <div class="mentor-stat"><span class="ms-value">8 yil</span><span class="ms-label">Tajriba</span></div>
+                        <div class="mentor-stat"><span class="ms-value">1,200+</span><span class="ms-label">O'quvchilar</span></div>
+                        <div class="mentor-stat"><span class="ms-value">96%</span><span class="ms-label">Muvaffaqiyat</span></div>
+                    </div>
+                    <div class="mentor-specialties">
+                        <span class="ms-tag">Writing</span>
+                        <span class="ms-tag">Speaking</span>
+                        <span class="ms-tag">Grammar</span>
+                    </div>
+                </div>
+
+                <div class="mentor-card">
+                    <div class="mentor-avatar-wrap">
+                        <img src="https://i.pravatar.cc/150?img=33" alt="Mentor">
+                        <div class="mentor-status"></div>
+                    </div>
+                    <div class="mentor-info">
+                        <h4>Sardor Karimov</h4>
+                        <span class="mentor-role">Reading Specialist</span>
+                    </div>
+                    <div class="mentor-stats">
+                        <div class="mentor-stat"><span class="ms-value">IELTS 9.0</span><span class="ms-label">Reading</span></div>
+                        <div class="mentor-stat"><span class="ms-value">6 yil</span><span class="ms-label">Tajriba</span></div>
+                        <div class="mentor-stat"><span class="ms-value">800+</span><span class="ms-label">O'quvchilar</span></div>
+                        <div class="mentor-stat"><span class="ms-value">93%</span><span class="ms-label">Muvaffaqiyat</span></div>
+                    </div>
+                    <div class="mentor-specialties">
+                        <span class="ms-tag">Reading</span>
+                        <span class="ms-tag">Strategy</span>
+                        <span class="ms-tag">Vocab</span>
+                    </div>
+                </div>
+
+                <div class="mentor-card">
+                    <div class="mentor-avatar-wrap">
+                        <img src="https://i.pravatar.cc/150?img=47" alt="Mentor">
+                        <div class="mentor-status"></div>
+                    </div>
+                    <div class="mentor-info">
+                        <h4>Nilufar Yusupova</h4>
+                        <span class="mentor-role">Speaking Coach</span>
+                    </div>
+                    <div class="mentor-stats">
+                        <div class="mentor-stat"><span class="ms-value">IELTS 8.0</span><span class="ms-label">Speaking</span></div>
+                        <div class="mentor-stat"><span class="ms-value">5 yil</span><span class="ms-label">Tajriba</span></div>
+                        <div class="mentor-stat"><span class="ms-value">600+</span><span class="ms-label">O'quvchilar</span></div>
+                        <div class="mentor-stat"><span class="ms-value">95%</span><span class="ms-label">Muvaffaqiyat</span></div>
+                    </div>
+                    <div class="mentor-specialties">
+                        <span class="ms-tag">Speaking</span>
+                        <span class="ms-tag">Pronunciation</span>
+                        <span class="ms-tag">Fluency</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════ LEVEL TEST CTA ═══════════ -->
+    <section id="test" class="test-cta-section">
+        <div class="container">
+            <div class="test-cta-container">
+                <div class="test-cta-left">
+                    <h2>Darajangizni aniqlang</h2>
+                    <p>3 ta oddiy savolga javob bering va biz sizga maxsus o'quv rejani tuzamiz.</p>
+                    <div class="test-cta-stats">
+                        <div class="tcs-item">
+                            <div class="tcs-number">45</div>
+                            <div class="tcs-label">daqiqa</div>
+                        </div>
+                        <div class="tcs-item">
+                            <div class="tcs-number">100%</div>
+                            <div class="tcs-label">bepul</div>
+                        </div>
+                        <div class="tcs-item">
+                            <div class="tcs-number">2,400+</div>
+                            <div class="tcs-label">natija</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="test-cta-right">
+                    <div class="test-form">
+                        <div class="tf-step active" id="tfStep1">
+                            <label>Hozirgi darajangiz</label>
+                            <div class="tf-options">
+                                <button class="tf-opt" onclick="selectTfOpt(this, 1)"><i class="fa-solid fa-seedling"></i> Beginner</button>
+                                <button class="tf-opt" onclick="selectTfOpt(this, 1)"><i class="fa-solid fa-layer-group"></i> Intermediate</button>
+                                <button class="tf-opt" onclick="selectTfOpt(this, 1)"><i class="fa-solid fa-rocket"></i> Advanced</button>
+                            </div>
+                        </div>
+                        <div class="tf-step" id="tfStep2">
+                            <label>Maqsadingiz</label>
+                            <div class="tf-options">
+                                <button class="tf-opt" onclick="selectTfOpt(this, 2)"><i class="fa-solid fa-graduation-cap"></i> IELTS 6.0+</button>
+                                <button class="tf-opt" onclick="selectTfOpt(this, 2)"><i class="fa-solid fa-award"></i> IELTS 7.5+</button>
+                                <button class="tf-opt" onclick="selectTfOpt(this, 2)"><i class="fa-solid fa-star"></i> IELTS 8.0+</button>
+                            </div>
+                        </div>
+                        <div class="tf-step" id="tfStep3">
+                            <label>Ismingiz va telefon raqamingiz</label>
+                            <div class="tf-inputs">
+                                <input type="text" placeholder="Ismingiz" id="tfName">
+                                <input type="tel" placeholder="+998 90 123 45 67" id="tfPhone">
+                            </div>
+                        </div>
+                        <div class="tf-step" id="tfResult">
+                            <div class="tf-success">
+                                <i class="fa-solid fa-circle-check"></i>
+                                <h3>Muvaffaqiyatli!</h3>
+                                <p>So'rovingiz yuborildi. Mutaxassisimiz tez orada siz bilan bog'lanadi.</p>
+                            </div>
+                        </div>
+                        <div class="tf-progress">
+                            <div class="tf-progress-bar"><div class="tf-progress-fill" id="tfProgressFill" style="width: 33%"></div></div>
+                        </div>
+                        <div class="tf-actions">
+                            <button class="btn-tf btn-tf-back" id="tfBackBtn" onclick="tfBack()" disabled><i class="fa-solid fa-arrow-left"></i></button>
+                            <button class="btn-tf btn-tf-next" id="tfNextBtn" onclick="tfNext()">Davom etish <i class="fa-solid fa-arrow-right"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════ FOOTER ═══════════ -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#" class="footer-logo"><i class="fa-solid fa-bolt"></i> LevelUp <span>IELTS</span></a>
+                    <p>Sizning muvaffaqiyatingiz &#8212; bizning maqsadimiz. O'zbekistonda IELTS tayyorgarlikning premium platformasi.</p>
+                    <div class="footer-socials">
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-telegram"></i></a>
+                        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                        <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Sahifalar</h4>
+                    <a href="#roadmap">Yo'nalish</a>
+                    <a href="#plans">Rejalar</a>
+                    <a href="#success">Natijalar</a>
+                    <a href="#mentors">Mentorlar</a>
+                    <a href="#test">Bepul test</a>
+                </div>
+                <div class="footer-links">
+                    <h4>Kurslar</h4>
+                    <a href="#">Foundation</a>
+                    <a href="#">Intensive</a>
+                    <a href="#">Premium Mentor</a>
+                    <a href="#">AI Writing Check</a>
+                    <a href="#">Speaking Club</a>
+                </div>
+                <div class="footer-contact">
+                    <h4>Bog'lanish</h4>
+                    <p><i class="fa-solid fa-location-dot"></i> Toshkent, Amir Temur ko'chasi, 107B</p>
+                    <p><i class="fa-solid fa-phone"></i> +998 90 123 45 67</p>
+                    <p><i class="fa-solid fa-envelope"></i> info@levelup-ielts.uz</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <span>&copy; 2024 LevelUp IELTS Academy. All rights reserved.</span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ═══════════ MOBILE BOTTOM BAR ═══════════ -->
+    <div class="mobile-bottom-bar">
+        <a href="#test" class="btn-mobile-cta">
+            <i class="fa-solid fa-bolt"></i>
+            Bepul diagnostika
+        </a>
+    </div>
+
+    <script src="./assets/js/main.js"></script>
+</body>
+</html>
